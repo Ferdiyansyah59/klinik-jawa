@@ -1,0 +1,396 @@
+
+.header-dashboard{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 0.1fr;
+    height: 100px;
+    width: 100%;
+    background: #212326;
+    z-index: 0;
+}
+.profile-menu img{  
+    height: 36px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.profile-menu h3{  
+    font-size: 20px;
+}
+.header-dashboard h1{
+    margin-left: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: arial;
+}
+.content-dashboard{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 30px;
+}
+.content-dashboard .title{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    height: 30px;
+}
+.content-dashboard .title img{
+    height: 20px;
+}
+.content-dashboard .title h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.jumbotron h1{
+    font-weight: bold;
+}
+.jumbotron h1 span{
+    font-weight: bold;
+    color: #44bef1;
+}
+.content-dashboard .shortcut-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 50px;
+}
+.shortcut-menu .shortcut-dokter{
+    border: 1px solid #707070;
+}
+.shortcut-menu .shortcut-dokter #content-dokter{
+    height: 250px;
+    background: #31B3C7;
+    width: 300px;
+}
+.shortcut-menu .shortcut-dokter #content-dokter img{
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    opacity: 0.3;
+}
+.shortcut-menu .shortcut-dokter #content-dokter h2{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+.shortcut-menu .shortcut-dokter #footer-dokter{
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+    justify-items: end;
+    height: 30px;
+    background: #2AC6DD;
+    border-top: 1px solid #259DAF;
+}
+.shortcut-menu .shortcut-dokter #footer-dokter img{
+    height: 20px;
+    margin-top: 5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.shortcut-menu .shortcut-dokter #footer-dokter a{
+    font-size: 16px;
+    margin-top: 3px;
+    color: #FFFFFF;
+}
+
+/*  */
+
+.shortcut-menu .shortcut-poliklinik{
+    border: 1px solid #707070;
+}
+.shortcut-menu .shortcut-poliklinik #content-poliklinik{
+    height: 250px;
+    background: #17F552;
+    width: 300px;
+}
+.shortcut-menu .shortcut-poliklinik #content-poliklinik img{
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    opacity: 0.6;
+}
+.shortcut-menu .shortcut-poliklinik #content-poliklinik h2{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+.shortcut-menu .shortcut-poliklinik #footer-poliklinik{
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+    justify-items: end;
+    height: 30px;
+    background: #37FA6B;
+    border-top: 1px solid #1DC449;
+}
+.shortcut-menu .shortcut-poliklinik #footer-poliklinik img{
+    height: 20px;
+    margin-top: 5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.shortcut-menu .shortcut-poliklinik #footer-poliklinik a{
+    font-size: 16px;
+    margin-top: 3px;
+    color: #FFFFFF;
+}
+/*  */
+
+.shortcut-menu .shortcut-obat{
+    border: 1px solid #707070;
+}
+.shortcut-menu .shortcut-obat #content-obat{
+    height: 250px;
+    background: #E3EA13;
+    width: 300px;
+}
+.shortcut-menu .shortcut-obat #content-obat img{
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    opacity: 0.6;
+}
+.shortcut-menu .shortcut-obat #content-obat h2{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+.shortcut-menu .shortcut-obat #footer-obat{
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+    justify-items: end;
+    height: 30px;
+    background: #EEF533;
+    border-top: 1px solid #A3A800;
+}
+.shortcut-menu .shortcut-obat #footer-obat img{
+    height: 20px;
+    margin-top: 5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.shortcut-menu .shortcut-obat #footer-obat a{
+    font-size: 16px;
+    margin-top: 3px;
+    color: #FFFFFF;
+}
+
+/* Autentifikasi */
+.container-aut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.card-aut{
+    padding: 16px;
+}
+.header{
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.head-aut{
+    color: #032680;
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: -30px;
+    font-family: comfar;
+}
+.form .login-form{
+    background: transparent;
+    border: transparent;
+    height: 25px;
+    width: 308px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #a0a0a0;
+    outline: none;
+    margin-bottom: 5px;
+}
+.form{
+    position: relative;
+    overflow: hidden;
+}
+.form .label-name{
+    position: absolute;
+    bottom: 9px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #707070;
+}
+.form label::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #707070;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 2px;
+    color: #a3a3a3;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.form .login-form:focus + .label-name .content-name,
+.form .login-form:valid + .label-name .content-name{
+    transform: translateY(-120%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form .login-form:focus + .label-name::after, .form .login-form:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.login-form::-webkit-.login-form-placeholder{
+    font-family: cent;
+    font-size: 18px;
+}
+form .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: -20px;
+}
+.btn-aut{
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #313131;
+    border: 1px solid #707070;
+    width: 200px;
+    height: 46px;
+    z-index: 6;
+    color: #D0D0D0;
+}
+.btn-aut:hover{
+    cursor: pointer;
+    background-color: #464646;
+}
+form .footer .forget{
+    color: #000000;
+    text-decoration: none;
+}
+form .footer .forget:hover{
+    text-decoration: underline;
+}
+
+.card-table{
+    padding: 30px;
+    height: 500px;
+    background: #FFFFFF;
+    border: 2px solid #b8b8b8;
+    border-radius: 20px;
+}
+
+.card-table .tambah{
+    background: #0D6EFD;
+    border: #0D6EFD;
+    color: #FFFFFF;
+}
+.card-table .tambah:hover{
+    background: #3485ff;
+    color: #FFFFFF;
+}
+.card-table .tambah:focus{
+    border: 1px solid #3485ff;
+}
+
+.footer-klinik{
+    height: 30px;
+    margin-top: 38px;
+    background: #000000;
+    text-align: center;
+}
+.footer-klinik p{
+    color: #FFFFFF;
+}
+
+.form-tambah {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #c7c7c7;
+    color: #808080;
+    font-size: 14px;
+    padding: 5px;
+}
+.form-select{
+    height: 40px;
+    width: 175px;
+    border-radius: 5px;
+    border: 2px solid #c7c7c7;
+    color: #808080;
+    font-size: 14px;
+    padding: 5px;
+}
+.form-textarea{
+    border-radius: 5px;
+    border: 2px solid #c7c7c7;
+    color: #808080;
+    font-size: 14px;
+    padding: 5px;
+}
+.form-tambah:focus{
+    box-shadow:2px 2px 5px 1.5px #1582a3;
+    border: 1px solid #0dbd88;
+    outline: none;
+}
+.form-select:focus{
+    box-shadow:2px 2px 5px 1.5px #1582a3;
+    border: 1px solid #0dbd88;
+    outline: none;
+}
+.form-textarea:focus{
+    box-shadow:2px 2px 5px 1.5px #1582a3;
+    border: 1px solid #0dbd88;
+    outline: none;
+}
+.form-tambah:disabled, .form-tambah[readonly], .form-tambah[readonly]:focus {
+    box-shadow: none;
+    border: none;
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.modal-content{
+    overflow-y: scroll;
+    max-height: 700px;
+}
+#modal-lookup{
+    background: #e9e9e9;
+}
+#logout{
+    cursor: pointer;
+}

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Klinik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+        <script src="https://kit.fontawesome.com/00e7d0c3e8.js"></script>
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+                    <div class="custom-menu">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                        </button>
+                    </div>
+                <div class="p-4">
+                    <h1><a href="index.html" class="logo">Klinik <span>Make Healthy</span></a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
+                        </li>
+                        <li id="side1">
+                            <a href="#karyawan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-user mr-3"></span> Karyawan</a>
+                            <ul class="collapse list-unstyled" id="karyawan">
+                                <li id="dokter">
+                                    <a href="../dokter/dokter-menu.html">Dokter</a>
+                                </li>
+                                <li id="karyawan-umum">
+                                    <a href="../karyawan/karyawan.html">Karyawan Umum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side2">
+                            <a href="#layanan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-cogs mr-3"></span> Layanan</a>
+                            <ul class="collapse list-unstyled" id="layanan">
+                                <li id="kamar">
+                                    <a href="kamar.html">Kamar</a>
+                                </li>
+                                <li id="detailLayanan">
+                                    <a href="../layanan/layanan.html">Detail Layanan</a>
+                                </li>
+                                <li id="poli">
+                                    <a href="../poli/poli.html">Poli</a>
+                                </li>
+                                <li id="rawatinap">
+                                    <a href="../rawatinap/rawatinap.html">Rawat Inap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side3">
+                            <a href="#pasien" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-user mr-3"></span> Pasien</a>
+                            <ul class="collapse list-unstyled" id="pasien">
+                                <li id="pasien">
+                                    <a href="../pasien/pasien.html">Data Pasien</a>
+                                </li>
+                                <li id="pendaftaran">
+                                    <a href="../pendaftaran/pendaftaran.html">Pendaftaran</a>
+                                </li>
+                                <li id="rekammedik">
+                                    <a href="../rekammedik/rekammedik.html">Rekam Medik</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side4">
+                            <a href="#obat" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-plus mr-3"></span> Obat</a>
+                            <ul class="collapse list-unstyled" id="obat">
+                                <li id="obat">
+                                    <a href="../obat/obat.html">Data Obat</a>
+                                </li>
+                                <li id="resep">
+                                    <a href="../resep/resep.html">Resep</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side5">
+                            <a href="#transaksi" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-credit-card mr-3"></span> Transaksi</a>
+                            <ul class="collapse list-unstyled" id="transaksi">
+                                <li id="bayarobat">
+                                    <a href="../bayarobat/bayarobat.html">Bayar Obat</a>
+                                </li>
+                                <li id="bayarlayanan">
+                                    <a href="../bayarlayanan/bayarlayanan.html">Bayar Layanan</a>
+                                </li>
+                                <li id="pembelianobat">
+                                    <a href="../pembelianobat/pembelianobat.html">Pembelian Obat</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="user">
+                            <a href="../user/user.html"><span class="fa fa-user mr-3"></span> User</a>
+                        </li>
+                        <li id="supplier">
+                            <a href="../supplier/supplier.html"><span class="fa fa-briefcase mr-3"></span> Supplier</a>
+                        </li>
+                        <li>
+                            <a id="logout"><span class="fa fa-sign-out mr-3"></span> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        <!-- Page Content  -->
+            <div id="content">
+                <div class="header-dashboard">
+                    <h1>Dashboard</h1>
+                    <div class="profile-menu">
+                        <img src="../../img/profile-user.png" alt="Profile">
+                    </div>
+                </div>
+                <div class="content-dashboard p-2 p-md-3 pt-2">
+                    <div id="dokter" class="title bg-primary p-1">
+                        <img src="../../img/doctor (1).png" alt="Home-Icon">
+                        <h2>Kamar</h2>
+                    </div>
+                    <div class="card-table">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <button class="btn tambah" id="btnAdd" data-toggle="modal" data-target="#">+Data Kamar</button>
+                            </div>
+                            <div class="col">
+                                <input type="text" autocomplete="off" placeholder="Search" class="form-tambah" id="search" />
+                            </div>
+                        </div>
+                        
+                        <div class="container-fluid" style="height: 10px;"></div>
+                        <div class="row">
+                            <div class="col float-none">
+                                <table class="table table-dark table-borderless" id="tabelangsuran">
+                                    <thead>
+                                        <th scope="col">Id </th>
+                                        <th scope="col">Nama Ruang</th>
+                                        <th scope="col">No Ruang</th>
+                                        <th scope="col">Kelas</th>
+                                        <th scope="col">Harga/Hari</th>
+                                        <th scope="col">Desk Ruang</th>
+                                        <th scope="col">Kapasitas</th>
+                                        <th scope="col">Terisi</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </thead>
+                                    <tbody class="table table-light" id="show-data">
+                  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="footer-klinik">
+                    <p>Copyright</p>    
+                </div>
+            </div>
+		</div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog container modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body modal-lg">
+                        <div class="container-fluid">
+                            <h4 id="title-modal" class="modal-title mb-3">Tambah Data</h4>
+                            <div class="form-group row">
+                                <label for="idruang" class="col-sm-2 col-form-label">ID</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="idkamar" placeholder="ID Kamar" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="namaruang"  class="col-sm-2 col-form-label">Nama Ruang</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-tambah" id="namaruang" placeholder="Nama Ruang" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="noruang" class="col-sm-2 col-form-label">Nomor Ruang</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="noruang" placeholder="Nomor Ruang" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
+                                <div class="col-sm-3">
+                                    <select name="satuan" id="kelas" class="form-select">
+                                        <option value="" disabled selected>-Kelas-</option>
+                                        <option value="Reguler">Reguler</option>
+                                        <option value="Premium">Premium</option>
+                                        <option value="VIP">VIP</option>
+                                        <option value="VVIP">VVIP</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="harga" class="col-sm-2 col-form-label">Harga/hr</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="harga" placeholder="Harga" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi Ruang</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="deskripsi" placeholder="Deskripsi" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="kapasitas" class="col-sm-2 col-form-label">Kapasitas</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="kapasitas" placeholder="Kapasitas" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="terisi" class="col-sm-2 col-form-label">Terisi</label>
+                                <div class="col-sm-3">
+                                    <input class="form-tambah" type="text" id="terisi" placeholder="Terisi" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="status" class="col-sm-2 col-form-label">Status</label>
+                                <div class="col-sm-3">
+                                    <select name="satuan" id="status" class="form-select">
+                                        <option value="" disabled selected>-Status-</option>
+                                        <option value="OK">OK</option>
+                                        <option value="Full">Full</option>
+                                        <option value="Dalam Perbaikan">Dalam Perbaikan</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                                <button class="btn btn-primary" type="button" id="btnSave">Simpan</button>
+                                <button class="btn btn-primary" type="button" id="btnSave-edit">Edit</button>
+                                <button class="btn btn-danger" type="button" id="btnBatal">&nbsp;Batal&nbsp;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script src="../../js/script.js"></script>
+        <script>
+            let status = localStorage.getItem("status");
+            if(status === "false"){
+                window.location.replace("../../login.html");
+            }
+        </script>
+  </body>
+</html>

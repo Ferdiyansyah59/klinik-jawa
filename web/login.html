@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Klinik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+</head>
+<body onload="changeHashOnLoad();">
+    <div class="container-aut">
+        <div class="card-aut">
+            <div class="header-aut">
+                <h1>Login</h1>
+            </div>
+            <form action="" method="POST">
+                <div class="content-login">
+                    <div class="form">
+                        <input class="email login-form" id="form-username-login"  name="email" type="text" autocomplete="off" required />
+    
+                        <label For="name" class="label-name">
+                            <span class="content-name" >ID User</span></label>
+                    </div>
+                    <div class="form">
+                        <input class="pw login-form" id="form-password-login" name="password" type="password" required/>
+                        <label For="name" class="label-name">
+                                <span class="content-name" >Password</span></label>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a class="forget" href="#">Forget Password?</a>
+                    <button type="button" id="btnAut" class="btn-aut">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script type = "text/javascript" >
+            function changeHashOnLoad() {
+                 window.location.href += "#";
+                 setTimeout("changeHashAgain()", "50"); 
+            }
+
+            function changeHashAgain() {
+              window.location.href += "1";
+            }
+
+            var storedHash = window.location.hash;
+            window.setInterval(function () {
+                if (window.location.hash != storedHash) {
+                     window.location.hash = storedHash;
+                }
+            }, 50);
+
+
+        </script> 
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Klinik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body onload="changeHashOnLoad();">
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+                    <div class="custom-menu">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                        </button>
+                    </div>
+                <div class="p-4">
+                    <h1><a href="index.html" class="logo">Klinik <span>Make Healthy</span></a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="index.html"><span class="fa fa-home mr-3"></span> Home</a>
+                        </li>
+                        <li id="side1">
+                            <a href="#karyawan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-user mr-3"></span> Karyawan</a>
+                            <ul class="collapse list-unstyled" id="karyawan">
+                                <li id="dokter">
+                                    <a href="view/dokter/dokter-menu.html">Dokter</a>
+                                </li>
+                                <li id="karyawan-umum">
+                                    <a href="view/karyawan/karyawan.html">Karyawan Umum</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side2">
+                            <a href="#layanan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-cogs mr-3"></span> Layanan</a>
+                            <ul class="collapse list-unstyled" id="layanan">
+                                <li id="kamar">
+                                    <a href="view/kamar/kamar.html">Kamar</a>
+                                </li>
+                                <li id="detailLayanan">
+                                    <a href="view/layanan/layanan.html">Detail Layanan</a>
+                                </li>
+                                <li id="poli">
+                                    <a href="view/poli/poli.html">Poli</a>
+                                </li>
+                                <li id="rawatinap">
+                                    <a href="view/rawatinap/rawatinap.html">Rawat Inap</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side3">
+                            <a href="#pasien" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-user mr-3"></span> Pasien</a>
+                            <ul class="collapse list-unstyled" id="pasien">
+                                <li id="pasienMenu">
+                                    <a href="view/pasien/pasien.html">Data Pasien</a>
+                                </li>
+                                <li id="pendaftaran">
+                                    <a href="view/pendaftaran/pendaftaran.html">Pendaftaran</a>
+                                </li>
+                                <li id="rekammedik">
+                                    <a href="view/rekammedik/rekammedik.html">Rekam Medik</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side4">
+                            <a href="#obat" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-plus mr-3"></span> Obat</a>
+                            <ul class="collapse list-unstyled" id="obat">
+                                <li id="obat">
+                                    <a href="view/obat/obat.html">Data Obat</a>
+                                </li>
+                                <li id="resep">
+                                    <a href="view/resep/resep.html">Resep</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="side5">
+                            <a href="#transaksi" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fa fa-credit-card mr-3"></span> Transaksi</a>
+                            <ul class="collapse list-unstyled" id="transaksi">
+                                <li id="bayarobat">
+                                    <a href="view/bayarobat/bayarobat.html">Bayar Obat</a>
+                                </li>
+                                <li id="bayarlayanan">
+                                    <a href="view/bayarlayanan/bayarlayanan.html">Bayar Layanan</a>
+                                </li>
+                                <li id="pembelianobat">
+                                    <a href="view/pembelianobat/pembelianobat.html">Pembelian Obat</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="user">
+                            <a href="view/user/user.html"><span class="fa fa-user mr-3"></span> User</a>
+                        </li>
+                        <li id="supplier">
+                            <a href="view/supplier/supplier.html"><span class="fa fa-briefcase mr-3"></span> Supplier</a>
+                        </li>
+                        <li>
+                            <a id="logout"><span class="fa fa-sign-out mr-3"></span> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        <!-- Page Content  -->
+            <div id="content">
+                <div class="header-dashboard">
+                    <h1>Dashboard</h1>
+                    <div class="profile-menu">
+                        <img src="img/profile-user.png" alt="Profile">
+                    </div>
+                </div>
+                <div class="content-dashboard p-2 p-md-3 pt-2">
+                    <div class="title bg-primary p-1">
+                        <img src="img/home-icon-silhouette.png" alt="Home-Icon">
+                        <h2>Home</h2>
+                    </div>
+                    <div class="jumbotron p-4">
+                        <h1>SELAMAT DATANG <span id="nama">ADMIN</span></h1>
+                        <p>Selamat Datang di Sistem Klinik ahay, untuk kalian semua yang menggunakan sistem ini, Semangat Bekerja!</p>
+                    </div>
+                    <div class="shortcut-menu">
+                        <div class="shortcut-dokter">
+                            <div id="content-dokter">
+                                <h2 id="doktor">Doctor</h2>
+                                <img src="img/doctor.png" alt="Gambar Dokter">
+                            </div>
+                            <div id="footer-dokter">
+                                <a href="view/dokter/dokter-menu.html">More</a>
+                                <img src="img/down-arrow.png" alt="More">
+                            </div>
+                        </div>
+                        <div class="shortcut-poliklinik">
+                            <div id="content-poliklinik">
+                                <h2>Poliklinik</h2>
+                                <img src="img/hospital.png" alt="Gambar poliklinik">
+                            </div>
+                            <div id="footer-poliklinik">
+                                <a href="view/poli/poli.html">More</a>
+                                <img src="img/down-arrow.png" alt="More">
+                            </div>
+                        </div>
+                        <div class="shortcut-obat">
+                            <div id="content-obat">
+                                <h2>Obat</h2>
+                                <img src="img/capsules.png" alt="Gambar obat">
+                            </div>
+                            <div id="footer-obat">
+                                <a href="view/obat/obat.html">More</a>
+                                <img src="img/down-arrow.png" alt="More">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-klinik">
+                    <p>Copyright</p>    
+                </div>
+            </div>
+        </div>
+        
+
+       
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type = "text/javascript" >
+            function changeHashOnLoad() {
+                 window.location.href += "#";
+                 setTimeout("changeHashAgain()", "50"); 
+            }
+
+            function changeHashAgain() {
+              window.location.href += "1";
+            }
+
+            var storedHash = window.location.hash;
+            window.setInterval(function () {
+                if (window.location.hash != storedHash) {
+                     window.location.hash = storedHash;
+                }
+            }, 50);
+            
+            let status = localStorage.getItem("status");
+            if(status === "false"){
+                window.location.replace("login.html");
+            }
+
+            $('#logout').click(()=>{
+                logout();
+            });
+
+            const logout = () => {
+                location.href = 'login.html';
+                sessionStorage.clear();
+                localStorage.setItem("status", false);
+            }
+        </script> 
+  </body>
+</html>
